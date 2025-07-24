@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+<html lang="pt-BR"> <!-- Declaração da linguagem da página -->
+<head>
+    <meta charset="UTF-8"> <!-- Declaração do conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag para tornar o site responsivo -->
+    <title>Contato</title> <!-- Título da página -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="container"> <!-- Div para envolver o conteúdo do formulário -->
+    <h2>Formulário de Contato</h2> <!-- Título do formulário -->
+    <form action="#" method="post" id="contact-form"> <!-- Formulário com método de envio "post" -->
+        <div class="form-group"> <!-- Div para agrupar elementos do formulário -->
+            <label for="name">Nome:</label> <!-- Rótulo do campo "Nome" -->
+            <input type="text" id="name" name="name" required> <!-- Campo de entrada para o nome -->
+        </div>
+        <div class="form-group"> <!-- Div para agrupar elementos do formulário -->
+            <label for="email">Email:</label> <!-- Rótulo do campo "Email" -->
+            <input type="email" id="email" name="email" required> <!-- Campo de entrada para o email -->
+        </div>
+        <div class="form-group"> <!-- Div para agrupar elementos do formulário -->
+            <label for="subject">Assunto:</label> <!-- Rótulo do campo "Assunto" -->
+            <input type="text" id="subject" name="subject" required> <!-- Campo de entrada para o assunto -->
+        </div>
+        <div class="form-group"> <!-- Div para agrupar elementos do formulário -->
+            <label for="message">Mensagem:</label> <!-- Rótulo do campo "Mensagem" -->
+            <textarea id="message" name="message" required></textarea> <!-- Área de texto para a mensagem -->
+        </div>
+        <div class="form-group"> <!-- Div para agrupar elementos do formulário -->
+            <button type="submit">Enviar</button> <!-- Botão de envio do formulário -->
+        </div>
+    </form>
+</div>
+
+<div>
+    <h2>Listas filiais</h2>
+    <ul>
+        <li>
+            <h2>Filial 1</h2>
+            <span><strong>Nome:</strong> QuantumConnect </span><p></p>
+            <span><strong>Endereço:</strong> Rua A, 123</span>
+            <address><strong>Email:</strong> QuantumConnect@VortexNet.com</address>
+            <address><strong>Telefone:</strong> (11) 98765-4321</address>
+        </li>
+        <li>
+            <h2>Filial 2</h2>
+            <span><strong>Nome:</strong> ZenithLink </span><p></p>
+            <span><strong>Endereço:</strong> Rua B, 456</span>
+            <address><strong>Email:</strong> ZenithLink@VortexNet.com</address>
+            <address><strong>Telefone:</strong> (21) 87654-3210</address>
+        </li>
+        <li>
+            <h2>Filial 3</h2>
+            <span><strong>Nome:</strong> NexusWave </span><p></p>
+            <span><strong>Endereço:</strong> Rua C, 789</span>
+            <address><strong>Email:</strong> NexusWave@VortexNet.com</address>
+            <address><strong>Telefone:</strong> (47) 12345-6789</address>
+        </li>
+        <li>
+            <h2>Filial 4</h2>
+            <span><strong>Nome:</strong> HorizonNet </span><p></p>
+            <span><strong>Endereço:</strong> Rua D, 012</span>
+            <address><strong>Email:</strong> HorizonNet@VortexNet.com</address>
+            <address><strong>Telefone:</strong> (31) 23456-7890</address>
+        </li>
+    </ul>
+    
+
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

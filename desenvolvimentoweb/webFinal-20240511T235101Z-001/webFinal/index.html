@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+
+   <div id="login">
+        <form id="login-form">
+            <h1>Login</h1>
+            <p> 
+                <label for="usuario">Usuário:</label>
+                <input id="usuario" name="usuario" required="required" type="text" />
+            </p>
+            <p> 
+                <label for="senha">Senha:</label>
+                <input id="senha" name="senha" required="required" type="password" />
+            </p>
+            <p>
+                <input type="checkbox" id="checkbox" name="checkbox"/>
+                <label for="checkbox">Permanecer conectado</label>
+            </p>
+            <p>
+                <input type="submit" value="Login" id="submit-form">
+                <input type="submit" value="Cadastrar" id="submit-cadastro">
+            </p>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

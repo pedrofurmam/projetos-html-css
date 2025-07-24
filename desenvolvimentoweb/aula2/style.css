@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    background-color: #f2f2f2; /* Cor de fundo da página */
+    margin-right: 40px;
+    text-align: justify;
+}
+h1 {
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    color: #6d00fb; /* Cor do texto */
+    text-align: center; /* Centraliza horizontalmente o texto */
+    margin-top: 70px; /* Ajuste para a margem superior */
+}
+img {
+    float: left;
+    margin-right: 20px;
+    align-items: center;
+    width: 300pt;
+    height: 200pt;
+}
+.container {
+    max-width: 600px; /* Largura máxima do container */
+    margin: 100px auto; /* Margem superior e inferior de 50px e centraliza o container */
+    background-color: #e6d5d5; /* Cor de fundo do container */
+    padding: 20px; /* Preenchimento interno do container */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra do container */
+}
+.form-group {
+    margin-top: 20px; /* Ajuste a margem superior conforme necessário para mover o formulário mais para baixo */
+}
+label {
+    display: block; /* Define rótulos como elementos de bloco */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    margin-bottom: 5px; /* Margem inferior entre os rótulos e os campos de entrada */
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Largura total dos campos de entrada e área de texto */
+    padding: 10px; /* Preenchimento interno dos campos de entrada e área de texto */
+    border: 1px solid #ccc; /* Borda dos campos de entrada e área de texto */
+    border-radius: 5px; /* Borda arredondada */
+    box-sizing: border-box; /* Inclui preenchimento e borda no tamanho total */
+}
+textarea {
+    height: 150px; /* Altura da área de texto */
+}
+button {
+    padding: 10px 20px; /* Preenchimento interno do botão */
+    background-color: #6d00fb; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    font-size: 16px; /* Tamanho da fonte do botão */
+}
+button:hover {
+    background-color: #6d00fb; /* Cor de fundo do botão ao passar o mouse */
+}
+.menu {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    background-color: #6d00fb;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0; /* Define o canto esquerdo */
+    width: 100%;
+    z-index: 1; /* Define uma ordem de empilhamento alta para o menu */
+    text-align: center; /* Centraliza os itens do menu */
+}
+.menu ul {
+    /* Remove os marcadores de lista padrão */
+    list-style-type: none;
+    /* Remova o preenchimento padrão e a margem da lista */
+    padding: 0;
+    margin: auto;
+}
+
+.menu li {
+    /* Exiba os itens de lista como inline-block */
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #111;
+}
+
+.slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: 0 auto; /* Define margens automáticas para centralizar */
+}
+
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.slide img {
+    width: 100%;
+    height: 400px; /* Defina a altura desejada para as imagens do slide */
+    object-fit: cover; /* Garante que a imagem preencha completamente a div, mantendo sua proporção */
+    border: 20px solid #6d00fb; /* Adiciona uma borda sólida ao redor das imagens */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Sombra do container */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+table {
+    border: 2px solid #000; /* Adiciona uma borda de 2px sólida preta à tabela */
+    border-collapse: collapse; /* Mescla as bordas das células da tabela */
+    background-color: #f8f8f8; /* Define uma cor de fundo para a tabela */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Sombra do container */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+/* Estilizando as linhas pares e ímpares alternadamente */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Define uma cor de fundo para as linhas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Define uma cor de fundo para as linhas ímpares */
+}
+
+/* Estilizando células quando o mouse passa por cima */
+td:hover {
+    background-color: rgb(217, 173, 230); /* Define uma cor de fundo para as células quando o mouse passa por cima */
+}
+
+/* Destacando o cabeçalho da tabela */
+thead tr {
+    background-color: #ccc; /* Define uma cor de fundo para o cabeçalho da tabela */
+    font-weight: bold; /* Define a fonte em negrito para o cabeçalho da tabela */
+    text-align: center;
+}
+
+/* Estilizando células específicas (preço dos produtos) */
+td:nth-child(3) {
+    font-weight: bold; /* Define a fonte em negrito para as células da terceira coluna (preço) */
+}
+
+/* Estilizando células específicas com seletores :nth-child(an + b) */
+td:nth-child(3n + 1) {
+    color: blue; /* Define a cor do texto para células da terceira coluna, a cada terceira célula começando da primeira */
+}
+
+/* Estilizando células específicas com seletores :nth-of-type */
+td:nth-of-type(2) {
+    text-align: center; /* Centraliza o conteúdo das células da segunda coluna (imagem) */
+}
+
+.zebrada tbody tr:nth-child(even) {
+    background-color: #777778; /* Define uma cor de fundo para as linhas pares */
+}
+
+.zebrada tbody tr:nth-child(odd) {
+    background-color: #f9f7f7; /* Define uma cor de fundo para as linhas ímpares */
+}
+.zebrada {
+    margin: 0 auto; /* Aplica margem automática para centralizar a tabela */
+}
+.img-tab {
+    width: 200px;
+    height: 160px;
+    margin-right: 1px;
+}
+.produtos{
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}

@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    background-color: #f2f2f2; /* Cor de fundo da página */
+    margin-right: 40px;
+    text-align: justify;
+}
+h1{
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    color: #6510d4;
+}
+img {
+    float: left;
+    margin-right: 20px;
+    align-items: center;
+    width: 300pt;
+    height: 200pt;
+}
+.img-tab {
+    width: 100px;
+    height: 80px;
+    margin-right: 1px;
+}
+.produtos{
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+.container {
+    max-width: 600px; /* Largura máxima do container */
+    margin: 50px auto; /* Margem superior e inferior de 50px e centraliza o container */
+    background-color: #e6d5d5; /* Cor de fundo do container */
+    padding: 20px; /* Preenchimento interno do container */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra do container */
+}
+.form-group {
+    margin-bottom: 20px; /* Margem inferior entre os grupos de campos */
+}
+label {
+    display: block; /* Define rótulos como elementos de bloco */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    margin-bottom: 5px; /* Margem inferior entre os rótulos e os campos de entrada */
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Largura total dos campos de entrada e área de texto */
+    padding: 10px; /* Preenchimento interno dos campos de entrada e área de texto */
+    border: 1px solid #ccc; /* Borda dos campos de entrada e área de texto */
+    border-radius: 5px; /* Borda arredondada */
+    box-sizing: border-box; /* Inclui preenchimento e borda no tamanho total */
+}
+textarea {
+    height: 150px; /* Altura da área de texto */
+}
+button {
+    padding: 10px 20px; /* Preenchimento interno do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    font-size: 16px; /* Tamanho da fonte do botão */
+}
+button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+/* Estilizando a tabela */
+table {
+    border: 2px solid #000; /* Adiciona uma borda de 2px sólida preta à tabela */
+    border-collapse: collapse; /* Mescla as bordas das células da tabela */
+    background-color: #f8f8f8; /* Define uma cor de fundo para a tabela */
+}
+
+/* Estilizando as linhas pares e ímpares alternadamente */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Define uma cor de fundo para as linhas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Define uma cor de fundo para as linhas ímpares */
+}
+
+/* Estilizando células quando o mouse passa por cima */
+td:hover {
+    background-color: rgb(217, 173, 230); /* Define uma cor de fundo para as células quando o mouse passa por cima */
+}
+
+/* Destacando o cabeçalho da tabela */
+thead tr {
+    background-color: #ccc; /* Define uma cor de fundo para o cabeçalho da tabela */
+    font-weight: bold; /* Define a fonte em negrito para o cabeçalho da tabela */
+    text-align: center;
+}
+
+/* Estilizando células específicas (preço dos produtos) */
+td:nth-child(3) {
+    font-weight: bold; /* Define a fonte em negrito para as células da terceira coluna (preço) */
+}
+
+/* Estilizando células específicas com seletores :nth-child(an + b) */
+td:nth-child(3n + 1) {
+    color: blue; /* Define a cor do texto para células da terceira coluna, a cada terceira célula começando da primeira */
+}
+
+/* Estilizando células específicas com seletores :nth-of-type */
+td:nth-of-type(2) {
+    text-align: center; /* Centraliza o conteúdo das células da segunda coluna (imagem) */
+}
+
+.zebrada tbody tr:nth-child(even) {
+    background-color: #777778; /* Define uma cor de fundo para as linhas pares */
+}
+
+.zebrada tbody tr:nth-child(odd) {
+    background-color: #f9f7f7; /* Define uma cor de fundo para as linhas ímpares */
+}
+.zebrada {
+    margin: 0 auto; /* Aplica margem automática para centralizar a tabela */
+}

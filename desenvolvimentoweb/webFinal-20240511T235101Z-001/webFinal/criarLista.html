@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <title>Listas</title>
+</head>
+<body id = "paginalista">
+    <h1>Criação de listas</h1>
+
+    <form id="form_lista">
+        <p>
+            <label for="nomeLista">Nome da lista:</label>
+            <input id="nomeLista" name="nomeLista" required="required" type="text">
+            <input type="submit" id="criarListaAction" value="Adicionar"> 
+        </p>
+    </form>
+
+    <table id="lista">
+        <thead>
+            <tr>
+                <th id="IDfield">ID</th>
+                <th>Nome</th>
+                <th>Criado em</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaBody">
+            
+        </tbody>
+        
+    </table>
+
+    <script type="module" src="criarLista.js"></script>
+    
+    
+</body>
+</html>

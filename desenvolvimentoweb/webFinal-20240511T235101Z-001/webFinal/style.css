@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+h1 {
+    color: #007bff; 
+}
+
+h3 {
+    color: #6c757d; 
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-right: 1px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    border-top: 1px solid #000000;
+    border: 1px solid #000000;
+    border-right: 1px solid #000;
+}
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#IDfield {
+    width: 500px;
+  }
+
+#login,#cadastro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#dashboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+
+
+  
